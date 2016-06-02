@@ -7,6 +7,7 @@ def passwordgen():
     upper = []
     lower = []
     password = []
+
     for i in range(65, 91):
         upper.append(chr(i))
     for i in range(97, 123):
@@ -18,9 +19,22 @@ def passwordgen():
     print(password)
     return password
 
+def easy_pw():
+    easy = ["mate", "tamas", "alma", "loci"]
+    password = str(random.choice(easy))
+    print(password)
+
+
+
 
 def main():
-    passwordgen()
+    ask = input("How strong would you like your password to be? [easy, or hard]\n")
+    if ask == "easy":
+        easy_pw()
+    elif ask == "hard":
+        passwordgen()
+    else:
+        print("use easy or hard")
     return
 
 if __name__ == '__main__':

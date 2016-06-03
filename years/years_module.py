@@ -12,9 +12,14 @@ def years(age):
 def main():
     name = input("What's your name? ")
     age = int(input("How old are you? "))
+    number = int(input("Type a number pls: "))
     years(age)
     after = years(age)
-    print(name+" you will be 100 years old in: ", after)  # I can use just print without defining after
+    print((name+", you will be 100 years old in: " + str(after)+" ")*number)
+    for i in range(number):
+        print(name+", you will be 100 years old in:", str(after) )
+
+
     return
 
 

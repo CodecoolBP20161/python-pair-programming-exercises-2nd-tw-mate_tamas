@@ -7,7 +7,6 @@ def passwordgen():
     upper = []
     lower = []
     password = []
-
     for i in range(65, 91):
         upper.append(chr(i))
     for i in range(97, 123):
@@ -19,12 +18,11 @@ def passwordgen():
     print(password)
     return password
 
+
 def easy_pw():
     easy = ["mate", "tamas", "alma", "loci"]
     password = str(random.choice(easy))
     print(password)
-
-
 
 
 def main():

@@ -11,7 +11,7 @@ def passwordgen():
         upper.append(chr(i))
     for i in range(97, 123):
         lower.append(chr(i))
-    for i in range(48, 58):
+    for i in range(41, 58):
         number.append(chr(i))
     password = random.sample(spec, 2) + random.sample(number, 2) + random.sample(upper, 2)+random.sample(lower, 2)
     password = ''.join(password)
